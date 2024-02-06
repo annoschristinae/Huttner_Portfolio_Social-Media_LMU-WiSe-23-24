@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Huttner</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+
+    <style>
+     img {
+width: 650px;
+height: 350px;
+border-radius: 10px;
+     }
+  </style>
+  </head>
+  
+  <body>
+    <header>
+      <a title="Home page" href="./index.html" class="left-icon">🏛️</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Curriculum.html">Curriculum</a>
+        <a href="./my-class.html">My Class</a>
+      
+
+        <span class="classes-dropdown">Check out our classes
+      <div class="classes">
+        <select name="class" id="classDropdown" onchange="goToClass()">
+            <option value="./Class1.html"></option>
+            <option value="./Class1.html">Class 1</option>
+            <option value="./Class2.html">Class 2</option>
+            <option value="./Class3.html">Class 3</option>
+            <option value="./Class4.html">Class 4</option>
+            <option value="./Class5.html">Class 5</option>
+            <option value="./Class6.html">Class 6</option>
+            <option value="./Class7.html">Class 7</option>
+            <option value="./Class8-9-11-12.html">Class 8, 9, 11, 12</option>
+            <option value="./Class10.html">Class 10</option>
+        </select>
+    </div>
+  </nav>
+     
+    </header>
+
+    <main>
+      <aside>
+        <h2>05.12.2023</h2>
+        <h2>12.12.2023</h2> 
+        <h2>16.01.2024</h2>
+        <h2>23.01.2023</h2>
+      </aside>
+     
+       
+        
+        <div class="YTzam">
+            <h1><mark>Class 8, 9, 11, 12</mark></h1>
+            <p>During these lessons we worked with the "students list". You can find it by clicking "My Class"
+            </p>
+            
+        </div>
+</main>
+
+    <footer>
+      <left>"I only know 25 letters of the alphabet. I don't know y."</left>
+      <center>&copy; 2023 LMU Students.</center>
+    </footer>
+    <script>
+      function goToClass() {
+          var dropdown = document.getElementById("classDropdown");
+          var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+          window.location.href = selectedOption;
+      }
+  </script>
+  </body>
+</html>

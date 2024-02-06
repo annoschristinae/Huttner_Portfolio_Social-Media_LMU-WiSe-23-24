@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Huttner</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+
+    <style>
+     img {
+width: 650px;
+height: 200px;
+border-radius: 10px;
+     }
+  </style>
+  </head>
+  
+  <body>
+    <header>
+      <a title="Home page" href="./index.html" class="left-icon">🏛️</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Curriculum.html">Curriculum</a>
+        <a href="./my-class.html">My Class</a>
+      
+
+        <span class="classes-dropdown">Check out our classes
+      <div class="classes">
+        <select name="class" id="classDropdown" onchange="goToClass()">
+            <option value="./Class1.html"></option>
+            <option value="./Class1.html">Class 1</option>
+            <option value="./Class2.html">Class 2</option>
+            <option value="./Class3.html">Class 3</option>
+            <option value="./Class4.html">Class 4</option>
+            <option value="./Class5.html">Class 5</option>
+            <option value="./Class6.html">Class 6</option>
+            <option value="./Class7.html">Class 7</option>
+            <option value="./Class8-9-11-12.html">Class 8, 9, 11, 12</option>
+            <option value="./Class10.html">Class 10</option>
+        </select>
+    </div>
+  </nav>
+     
+    </header>
+
+    <main>
+      <aside>
+        <h2>14.11.2023</h2>
+      </aside>
+     
+       
+        <section>
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Calculator</title>
+              <script src="./index.js"></script>
+              <link href="./styles.css"></link>
+            </head>
+            <body>
+              <div class="wbg">
+              <h3>Simple Calculator</h3>
+          
+              <div>
+                  <label for="num1">Number 1:</label>
+                  <input type="number" id="number1" placeholder="Enter a number" />
+              </div>
+              
+              <div>
+                <label for="num2">Number 2:</label>
+                <input type="number" id="number2" placeholder="Enter a number" />
+              </div>
+              
+              <div>
+                <label for="num3">Number 3:</label>
+                <input type="number" id="number3" placeholder="Enter a number" />
+              </div>
+              <div class="operation">
+                <label>Operation:</label>
+                <input type="radio" name="operation" value="add" />Add
+                <input type="radio" name="operation" value="subtract" />Subtract
+                <input type="radio" name="operation" value="multiply" />Multiply
+                <input type="radio" name="operation" value="divide" />Divide
+              </div>
+          
+              <button id="calculateButton">Calculate</button>
+          
+              <h3 id="result"></h3>
+            </div>
+            </body>
+          </html>
+          
+      </section>
+</main>
+
+    <footer>
+      <left>"What did the janitor say when he jumped out of the closet?" "Supplies!"</left>
+      <center>&copy; 2023 LMU Students.</center>
+    </footer>
+    <script>
+      function goToClass() {
+          var dropdown = document.getElementById("classDropdown");
+          var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+          window.location.href = selectedOption;
+      }
+
+      function calculate() {
+  // Get input values and operation
+  var num1 = parseFloat(document.getElementById("number1").value);
+  var num2 = parseFloat(document.getElementById("number2").value);
+  var num3 = parseFloat(document.getElementById("number3").value);
+  var operation = document.querySelector('input[name="operation"]:checked');
+
+  if (operation === null) {
+    document.getElementById("result").innerHTML = "Please select the operation";
+    return;
+  }
+
+  // Perform calculation based on the selected operation
+  var result;
+  switch (operation.value) {
+    case "add":
+      result = add(num1, num2, num3);
+      break;
+    case "subtract":
+      result = subtract(num1, num2, num3);
+      break;
+    case "multiply":
+      result = multiply(num1, num2, num3);
+      break;
+    case "divide":
+      result = divide(num1, num2, num3);
+      break;
+    default:
+      result = "Invalid operation";
+  }
+
+  // Display the result
+  document.getElementById("result").innerHTML = "Result: " + result;
+}
+
+// Functions for each operation
+function add(a, b, c) {
+  return a + b + c;
+}
+
+function subtract(a, b, c) {
+  return a - b - c;
+}
+
+function multiply(a, b, c) {
+  return a * b * c;
+}
+
+function divide(a, b, c) {
+  if (b !== 0 && c !== 0) {
+    return a / b / c;
+  } else {
+    return "Cannot divide by zero";
+  }
+}
+
+// add on click event to calculate button
+document.getElementById("calculateButton").addEventListener("click", calculate);
+
+  </script>
+  </body>
+</html>

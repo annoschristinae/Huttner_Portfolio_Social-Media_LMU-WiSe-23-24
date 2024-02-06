@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Huttner</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+
+    <style>
+     img {
+width: 450px;
+height: 200px;
+border-radius: 10px;
+     }
+  </style>
+  </head>
+  
+  <body>
+    <header>
+      <a title="Home page" href="./index.html" class="left-icon">🏛️</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Curriculum.html">Curriculum</a>
+        <a href="./my-class.html">My Class</a>
+      
+
+        <span class="classes-dropdown">Check out our classes
+      <div class="classes">
+        <select name="class" id="classDropdown" onchange="goToClass()">
+          <option value="./Class1.html"></option>
+          <option value="./Class1.html">Class 1</option>
+          <option value="./Class2.html">Class 2</option>
+          <option value="./Class3.html">Class 3</option>
+          <option value="./Class4.html">Class 4</option>
+          <option value="./Class5.html">Class 5</option>
+          <option value="./Class6.html">Class 6</option>
+          <option value="./Class7.html">Class 7</option>
+          <option value="./Class8-9-11-12.html">Class 8, 9, 11, 12</option>
+          <option value="./Class10.html">Class 10</option>
+        </select>
+    </div>
+  </nav>
+     
+    </header>
+
+    <main>
+      <aside>
+        <h2>17.10.2023</h2>
+       
+      </aside>
+      
+      <div class="YTzam">
+        <h1>Class 1</h1>
+        <img src="https://images.t3n.de/news/wp-content/uploads/2017/08/new-youtube-logo-2.jpg?class=hero-small" alt="der Boy 2021">
+        <section>
+        <p><mark><strong>User interface and experience design</strong>
+
+            -creator-watcher ratio special
+            -harder to upload
+            -share content with strangers
+            -learning platform
+            -longer content
+            -search bar important
+            -more content than person
+            -adjusted to computer screen
+            -rating system
+            -Youtube kids; age restrictions
+            -user chooses Video actively
+          </mark>
+        </p>
+         <p><strong>Features and functionality</strong>
+            
+            -Bell
+            -Streaming
+            -Youtube shorts
+            -Youtube videos on Websites
+            -Used for News websites</p>   
+            <p><strong>Monetization strategies</strong>
+            
+                -Ads
+                -Youtube Premium
+                -sells your data through personalized ads</p>
+            
+            
+            
+            
+            <p><strong>Target audience and user demographics</strong>
+                -user demographic older
+               -Education, company intern
+               -News</p>
+            
+            <p><strong>Privacy and security measures</strong>
+                -geo blockers
+                -you dont share experiences
+                -public -you don't need an account
+                -reporting requires real id</p>
+            
+            <p><strong>Recent updates and innovation</strong>
+            
+                Youtube shorts
+                Removal of dislike button</p>
+            
+            
+            <p><mark><strong>Personal Thoughts</strong>
+            
+                Compared to most other social media platforms, YouTube seems to be the most sophisticated. The user is encouraged to watch content based of a title. This makes it easier to share even matters of weigh. Those few creators have a lot of freedom regarding the length of their videos, differentiating it from more modern content sharing which is often compressed into a few seconds. 
+                Users have a chance to act more like humans regarding active decisions about what they want to consume and not act like passive zombies. It may be the only social media to enable a real train of thought.</mark></p>
+    </p>
+  
+  </section>      
+</div>
+
+
+    </main>
+
+    <footer>
+      <left>"How do you follow Will Smith in the snow?" "You follow the fresh prints."</left>
+      <center>&copy; 2023 LMU Students.</center>
+    </footer>
+    <script>
+      function goToClass() {
+          var dropdown = document.getElementById("classDropdown");
+          var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+          window.location.href = selectedOption;
+      }
+  </script>
+  </body>
+</html>

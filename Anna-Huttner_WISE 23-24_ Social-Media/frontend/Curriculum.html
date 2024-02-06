@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Anna Huttner</title>
+        <link rel="stylesheet" href="./styles.css" />
+    <style>
+       section img {
+width: 450px; /* Automatische Breite, um Proportionen zu erhalten */
+height: 300px;
+border-radius: 10px;
+filter: grayscale(85%);
+
+}
+section{
+background-color: rgba(7, 0, 52, 0.7);
+padding:20px;
+display: flex;
+justify-content: left;
+
+}
+.Fotoreihe {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 200px;
+        }
+   </style>
+ 
+  </head>
+  <body>
+    <header>
+      <a title="Home page" href="./index.html" class="left-icon">🏛️</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Curriculum.html">Curriculum</a>
+        <a href="./my-class.html">My Class</a>
+
+        
+
+        <span class="classes-dropdown">Check out our classes
+            <div class="classes">
+              <select name="class" id="classDropdown" onchange="goToClass()">
+                <option value="./Class1.html"></option>
+            <option value="./Class1.html">Class 1</option>
+            <option value="./Class2.html">Class 2</option>
+            <option value="./Class3.html">Class 3</option>
+            <option value="./Class4.html">Class 4</option>
+            <option value="./Class5.html">Class 5</option>
+            <option value="./Class6.html">Class 6</option>
+            <option value="./Class7.html">Class 7</option>
+            <option value="./Class8-9-11-12.html">Class 8, 9, 11, 12</option>
+            <option value="./Class10.html">Class 10</option>
+              </select>
+          </div>
+      </nav>
+    </header>
+
+    <main>
+
+<section>
+    
+
+    <div class="contact-info">
+    <h1>Curriculum of Anna Huttner</h1>
+    <section>
+        <img src="C:\Users\huttn\Documents\Studium\1. Semester WS 23-24\Social Media\Portfolio\PortfolioAnna\Fotoanna.JPG" alt="Anna Huttner">
+      </section>
+
+        <p><strong>Name:</strong>   Anna Huttner</p>
+        <p><strong>Staatsangehörigkeit:</strong>    Deutsch</p>
+        <p><strong>Handynummer:</strong>    +49 18742069</p>
+        <p><strong>Email:</strong>
+          <a href="mailto:huttner.anna@gmail.com">huttner.anna@gmail.com</a> </p>
+        <p><strong>Geburtsdatum:</strong>   22.06.2002</p>
+        <p><strong>Adresse:</strong>Selzergasse 19, 1150 Wien, Österreich</p>
+      
+     
+    </div>
+    <div class="Karrieretabelle"
+      <section>
+        <div class="lebenslauf.aktuell">
+            <tr>
+                <h2 colspan="4">Karriere</h2>
+            </tr>
+         <table>
+             
+             <tr>
+               <td>2008-2012</td>
+               <td>Grundschule Rottenburg </td>
+             </tr>
+             <tr>
+               <td>2012 – 2020 </td>
+               <td>Maristen-Gymnasium in Furth </td>
+               <td>Abitur</td>
+             </tr>
+             <tr>
+               <td>2020-2023 </td>
+               <td>Ausbildung Chemielaborantin</td>
+               <td>BMW AG</td>
+             </tr>
+             <tr>
+               <td>07.2023- 10.2023</td>
+               <td>Angestellte Chemielaborantin</td>
+               <td>BMW AG</td>
+             </tr>
+             <tr>
+               <td>Seit 10.2023</td>
+               <td>Studium Kunst und Multimedia</td>
+               <td>LMU München</td>
+             </tr>
+             <tr>
+           </table>
+
+        <p><strong>TECHNISCHE FÄHIGKEITEN UND KOMPETENZEN:</strong>    Gute Computerkenntnisse in MS Windows, Word und Excel, sowie PowerPoint
+            </p>
+        <p><strong>SOZIALE FÄHIGKEITEN UND KOMPETENZEN:</strong>    Mitglied der Landjugend, Mitglied des Boxclubs Bavaria Landshut</p>
+        <p><strong>SONSTIGE FÄHIGKEITEN UND KOMPETENZEN:</strong>    Stärken aus dem Stärkenseminar: Wissbegierde, Leistungsorientierung, Intellekt, Vorstellungskraft, Ideensammler </p>
+        
+        </div>
+
+
+
+
+
+        <div class="Fotoreihe">
+          <div>
+              <img src="C:\Users\huttn\Documents\Studium\1. Semester WS 23-24\Social Media\Portfolio\PortfolioAnna\fr3.JPG" style="width: 200px; height:200px;">
+              <figcaption>Multimedia Series 2023</figcaption>
+          </div>
+      
+          <div>
+              <img src="C:\Users\huttn\Documents\Studium\1. Semester WS 23-24\Social Media\Portfolio\PortfolioAnna\fr1.JPG" style="width: 200px; height:200px;">
+            
+          </div>
+      
+          <div>
+              <img src="C:\Users\huttn\Documents\Studium\1. Semester WS 23-24\Social Media\Portfolio\PortfolioAnna\fr2.JPG" style="width: 200px; height:200px;">
+             
+          </div>
+        </div>
+         </section>
+
+    </main>
+
+    <footer>
+      <left>"I'm afraid for the calendar. Its days are numbered."</left>
+      <center>&copy; 2023 LMU Students.</center>
+    </footer>
+    <script>
+      function goToClass() {
+          var dropdown = document.getElementById("classDropdown");
+          var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+          window.location.href = selectedOption;
+      }
+  </script>
+
+    
+  </body>
+</html>

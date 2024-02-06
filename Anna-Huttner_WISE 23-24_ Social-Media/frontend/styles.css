@@ -1,0 +1,167 @@
+
+
+body {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://gifdb.com/images/high/aesthetic-background-498-x-250-gif-iokudgj99c8gey35.gif');
+  background-size: cover;
+  background-position: center;
+  margin: 10px; /* Entferne den Standardmargenraum */
+  padding: 20px; /* Entferne den Standardpolsterraum */
+}
+
+li {
+  list-style-type: none;
+}
+
+mark{
+color: #ffffff;
+background-color: #000000b5;
+}
+
+a{
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  }
+
+header {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.classes select {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Stil für die Dropdown-Optionen */
+.classes select option {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+header nav {
+  display: flex;
+}
+
+
+main {
+  display: flex;
+  flex-grow: 2;
+}
+
+aside {
+  background-color: #000000;
+  color: #fff;
+  width: 10%;
+  padding: 30px;
+  font-size: 10px;
+  line-height: 2.5;
+}
+
+
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  /* text-align: center; */
+  padding: 10px 0;
+}
+
+figcaption{
+  color: #fff;
+  text-align: left;
+}
+        
+.lebenslauf.aktuell {
+  max-width:300px;
+  margin: auto;
+  color: #d6dff6;
+}
+table {
+border: 3px solid rgb(90, 92, 77); /* Schwarzer Rahmen um die Tabelle */
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #878787;
+text-align: left;
+padding: 8px;
+}
+
+tr{
+  color: #d6dff6;
+
+}
+
+
+.contact-info {
+   text-align: center;
+   margin: auto;
+}
+
+.YTzam {
+  text-align: left;
+  margin: 10px;
+  line-height: 2;
+}
+
+
+a:hover {
+  text-decoration:solid;
+}
+
+p{
+color: #d6dff6;
+
+}
+h1{
+  color: #f8fff4;
+  font-size: 60px;
+  
+  }
+h2{
+color: aliceblue;
+
+}
+
+h3{
+
+  color:#7564a0;
+}
+
+.wbg{
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  
+}
